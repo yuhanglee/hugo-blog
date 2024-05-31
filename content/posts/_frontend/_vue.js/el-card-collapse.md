@@ -18,7 +18,7 @@ lightgallery: false
 
 ## 效果
 
-在线演示：<https://lruihao.github.io/vue-el-demo/#/card-collapse>
+在线演示：<https://yuhanglee.github.io/vue-el-demo/#/card-collapse>
 
 ## 实现过程
 

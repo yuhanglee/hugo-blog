@@ -11,7 +11,7 @@ updates:
       interval: "monthly"
     open-pull-requests-limit: 1000
     assignees:
-      - "Lruihao"
+      - "yuhanglee"
     labels:
       - "dependencies"
   - package-ecosystem: "gitsubmodule" # See documentation for possible values
@@ -20,7 +20,7 @@ updates:
       interval: "weekly"
     open-pull-requests-limit: 1000
     assignees:
-      - "Lruihao"
+      - "yuhanglee"
     labels:
       - "dependencies"
   - package-ecosystem: "gomod"
@@ -29,6 +29,6 @@ updates:
       interval: "weekly"
     open-pull-requests-limit: 1000
     assignees:
-      - "Lruihao"
+      - "yuhanglee"
     labels:
       - "dependencies"

@@ -16,7 +16,7 @@ tags:
 
 [vue-fullscreen](https://github.com/mirari/vue-fullscreen) 是一个用于将任意页面元素进行全屏切换的 Vue 插件，基于 [screenfull](https://github.com/sindresorhus/screenfull)。这个插件本身提供了组件、指令以及 API 三种使用方式，具体的使用方法请参考 [vue-fullscreen](https://github.com/mirari/vue-fullscreen)。
 
-## [在线演示](https://lruihao.github.io/vue-el-demo/#/fullscreen)
+## [在线演示](https://yuhanglee.github.io/vue-el-demo/#/fullscreen)
 
 ## 安装
 

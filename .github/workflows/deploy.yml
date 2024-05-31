@@ -68,7 +68,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           deploy_key: ${{ secrets.GP_DEPLOY_KEY }}
-          external_repository: Lruihao/lruihao.github.io
+          external_repository: yuhanglee/yuhanglee.github.io
           publish_branch: main
           publish_dir: ./public
           user_name: 'github-actions[bot]'
@@ -76,13 +76,13 @@ jobs:
           commit_message: ':rocket: ${{ github.event.head_commit.message }}'
           force_orphan: false  # once a year
 
-      - name: Update Algolia index
-        env:
-          ALGOLIA_APP_ID: MTJNHU0JVB
-          ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
-          ALGOLIA_INDEX_NAME: 'index'
-          ALGOLIA_INDEX_FILE: './public/index.json'
-        run: npm run algolia
+      # - name: Update Algolia index
+      #   env:
+      #     ALGOLIA_APP_ID: MTJNHU0JVB
+      #     ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+      #     ALGOLIA_INDEX_NAME: 'index'
+      #     ALGOLIA_INDEX_FILE: './public/index.json'
+      #   run: npm run algolia
 
       # - name: Install coscmd
       #   run: sudo pip install coscmd

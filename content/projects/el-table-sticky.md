@@ -33,7 +33,7 @@ Element UI 的表格组件在使用时，如果表格内容过多，表格会出
 
 **Element UI 的解决不足点**：高度值只支持设置数字型，在实际开发中往往需要借助 JS 来计算。
 
-为了解决以上痛点/需求，减少开发和维护成本，于是我开发了 [el-table-sticky](https://github.com/Lruihao/el-table-sticky) 插件，[在线示例](https://lruihao.github.io/el-table-sticky/)。
+为了解决以上痛点/需求，减少开发和维护成本，于是我开发了 [el-table-sticky](https://github.com/Lruihao/el-table-sticky) 插件，[在线示例](https://yuhanglee.github.io/el-table-sticky/)。
 
 <!-- markdownlint-disable-next-line no-bare-urls -->
 {{< link href="https://github.com/Lruihao/el-table-sticky" content="el-table-stick" card=true >}}

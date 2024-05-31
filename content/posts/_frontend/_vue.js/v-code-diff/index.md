@@ -15,7 +15,7 @@ resources:
 lightgallery: false
 ---
 
-在完成一个 code diff 需求时，发现所使用的插件不足以完成预期的需求。当然最终还是顺利完成了，详见 [code diff demo](https://lruihao.github.io/vue-el-demo/#/code-diff)。
+在完成一个 code diff 需求时，发现所使用的插件不足以完成预期的需求。当然最终还是顺利完成了，详见 [code diff demo](https://yuhanglee.github.io/vue-el-demo/#/code-diff)。
 
 <!--more-->
 

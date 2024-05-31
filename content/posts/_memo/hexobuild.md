@@ -93,7 +93,7 @@ hexo s
 hexo g -d
 ```
 
-部署后我们可以浏览器搜 username.github.io 查看自己的博客效果，比如我的 [lruihao.github.io](https://lruihao.github.io/)
+部署后我们可以浏览器搜 username.github.io 查看自己的博客效果，比如我的 [yuhanglee.github.io](https://yuhanglee.github.io/)
 
 ## 美化
 

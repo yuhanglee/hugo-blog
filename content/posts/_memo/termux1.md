@@ -186,7 +186,7 @@ ssh -T git@gitee.com   #gitee
 deploy:
 - type: git
   repository:
-    github: git@github.com:Lruihao/Lruihao.github.io.git,master
+    github: git@github.com:yuhanglee/yuhanglee.github.io.git,master
     coding: git@git.coding.net:liruihao/liruihao.git,master
   #message: "日常更新"
 ```
@@ -199,7 +199,7 @@ hexo g -d
 ```
 
 没出错就可以正常通过相应域名访问了。
-<https://lruihao.github.io>
+<https://yuhanglee.github.io>
 <https://liruihao.coding.me>
 <https://lruihao.gitee.io> **//手机 hexo 效果展示**
 

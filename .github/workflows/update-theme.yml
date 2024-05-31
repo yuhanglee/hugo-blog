@@ -35,7 +35,7 @@ jobs:
       - name: Change remote origin
         run: |
           git remote remove origin
-          git remote add origin https://github.com/Lruihao/hugo-blog.git
+          git remote add origin https://github.com/yuhanglee/hugo-blog.git
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5

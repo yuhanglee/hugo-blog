@@ -14,7 +14,7 @@ tags:
 
 ## Demo
 
-先来看一下效果：[demo](http://lruihao.github.io/vue-el-demo/#/overflow-tooltip)
+先来看一下效果：[demo](http://yuhanglee.github.io/vue-el-demo/#/overflow-tooltip)
 
 ## 实现代码
 

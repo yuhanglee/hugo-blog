@@ -174,7 +174,7 @@ requireAll(req)
 
 ## 示例
 
-本文 [示例](https://lruihao.github.io/vue-el-demo/#/icons) 代码已上传至 [vue-el-demo](https://github.com/Lruihao/vue-el-demo) 项目中，可自行下载查看。
+本文 [示例](https://yuhanglee.github.io/vue-el-demo/#/icons) 代码已上传至 [vue-el-demo](https://github.com/Lruihao/vue-el-demo) 项目中，可自行下载查看。
 
 ## 参考资料
 

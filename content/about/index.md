@@ -73,5 +73,5 @@ const site = new Blog('菠菜眾長', 'Lruihao', 'https://lruihao.cn');
 [fixit-repo]: https://github.com/hugo-fixit/FixIt
 
 <!-- footnote reference definition -->
-[^1]: [菠菜眾長][blog] 的源码见 [Lruihao/hugo-blog][blog-repo]，构建档见 [lruihao.github.io](https://github.com/Lruihao/lruihao.github.io)。
+[^1]: [菠菜眾長][blog] 的源码见 [Lruihao/hugo-blog][blog-repo]，构建档见 [yuhanglee.github.io](https://github.com/yuhanglee/yuhanglee.github.io)。
 [^2]: [FixIt][fixit] 的源码见 [hugo-fixit/FixIt][fixit-repo]。

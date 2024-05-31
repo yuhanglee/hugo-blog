@@ -21,7 +21,7 @@ summary: 本文将对拖拽式仪表盘的功能需求进行分析，了解需�
 
 ## 功能需求
 
-由于本系列文章写作在设计和开发之后，所以先一睹为快，看看最终的效果：[在线 Demo](https://lruihao.github.io/vue-el-demo/#/dashboard/index)
+由于本系列文章写作在设计和开发之后，所以先一睹为快，看看最终的效果：[在线 Demo](https://yuhanglee.github.io/vue-el-demo/#/dashboard/index)
 
 技术背景是基于 Vue2 实现，功能需求大致如下：
 

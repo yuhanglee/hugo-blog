@@ -19,7 +19,7 @@ math: false
 
 ## 在线体验
 
-- [vue-el-demo#apple-devices-preview](https://lruihao.github.io/vue-el-demo/#/apple-devices-preview)
+- [vue-el-demo#apple-devices-preview](https://yuhanglee.github.io/vue-el-demo/#/apple-devices-preview)
 - [源码](https://github.com/Lruihao/vue-el-demo/blob/main/src/views/apple-devices-preview.vue)
 
 ## 实现原理

@@ -41,7 +41,7 @@ git init
 接下来进行远程代码库克隆（事先在 coding 等中建立一个项目，就是你需要链接的仓库）
 
 ```
-git clone https://github.com/Lruihao/Lruihao.github.io.git
+git clone https://github.com/yuhanglee/yuhanglee.github.io.git
 ```
 
 克隆时会出现输入账号密码的环节正确输入即可。

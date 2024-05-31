@@ -1,8 +1,8 @@
 # 菠菜眾長
 
 [![Hugo](https://img.shields.io/badge/Hugo-%5E0.123.0-ff4088?style=flat&logo=hugo)](https://gohugo.io/)
-[![Hugo build and deploy](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml)
-[![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/Lruihao/hugo-blog/main?style=flat)](https://github.com/Lruihao/hugo-blog/commits/main)
+[![Hugo build and deploy](https://github.com/yuhanglee/hugo-blog/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/yuhanglee/hugo-blog/actions/workflows/deploy.yml)
+[![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/yuhanglee/hugo-blog/main?style=flat)](https://github.com/yuhanglee/hugo-blog/commits/main)
 
 > 站名“菠菜眾長”，取“兼收並蓄，博採眾長”之意。[建站](https://lruihao.cn/posts/hello-world/) 的初衷不是为了炫耀所知，而是记录无知。
 
@@ -17,20 +17,20 @@
 - [合集](https://lruihao.cn/collections/)
 - [标签](https://lruihao.cn/tags/)
 
-还有一些临时捕获或蓄谋已久的 [想法 💡](https://github.com/users/Lruihao/projects/1)。
+还有一些临时捕获或蓄谋已久的 [想法 💡](https://github.com/users/yuhanglee/projects/1)。
 
 ## Distributable
 
-- [github-pages](https://github.com/Lruihao/lruihao.github.io)
+- [github-pages](https://github.com/yuhanglee/yuhanglee.github.io)
 - [Vercel](https://blog-lruihao.vercel.app/)
 
 ## Subscribe
 
 - [RSS](http://lruihao.cn/index.xml)
-- [GitHub](https://github.com/Lruihao/hugo-blog "Watch on GitHub")
+- [GitHub](https://github.com/yuhanglee/hugo-blog "Watch on GitHub")
 - [云 + 社区](https://cloud.tencent.com/developer/column/94521)
 
-## [Roadmap](https://github.com/users/Lruihao/projects/1)
+## [Roadmap](https://github.com/users/yuhanglee/projects/1)
 
 ## Project setup
 
@@ -62,7 +62,7 @@
 首先点上 Star 😜，然后下载源码：
 
 ```bash
-git clone --recursive git@github.com:Lruihao/hugo-blog.git && cd hugo-blog
+git clone --recursive git@github.com:yuhanglee/hugo-blog.git && cd hugo-blog
 ```
 
 下载源码后，有两种方法可以启动这个博客。
@@ -144,12 +144,12 @@ Press Ctrl+C to stop
 ## License
 
 [![Content License](https://img.shields.io/badge/license-CC_BY--NC--SA_4.0-blue?style=flat)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![License](https://img.shields.io/github/license/Lruihao/hugo-blog?style=flat)](https://github.com/Lruihao/hugo-blog/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/yuhanglee/hugo-blog?style=flat)](https://github.com/yuhanglee/hugo-blog/blob/main/LICENSE)
 
 - 此存储库中的文本、图像和视频等内容采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可
-- 此存储库中的代码采用 [MIT](https://github.com/Lruihao/hugo-blog/blob/main/LICENSE) 许可
+- 此存储库中的代码采用 [MIT](https://github.com/yuhanglee/hugo-blog/blob/main/LICENSE) 许可
 - _`content/private` 目录不在任何许可范围内_
 
 ## Author
 
-[Lruihao](https://github.com/Lruihao "在 GitHub 上关注我")
+[yuhanglee](https://github.com/yuhanglee "在 GitHub 上关注我")

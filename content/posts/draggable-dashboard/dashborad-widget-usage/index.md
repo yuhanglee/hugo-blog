@@ -261,7 +261,7 @@ export default {
 
 又例如，我在 [iTab 新标签页](https://itab.link/) 网址导航中，看到了一个“一言组件”觉得很有意思。
 
-于是乎，我也开发了一个“一言组件”，[在线 demo](https://lruihao.github.io/vue-el-demo/#/dashboard/index)，[组件源码 `hitokoto.vue`](https://github.com/Lruihao/vue-el-demo/blob/main/src/views/dashboard/widgets/daily/hitokoto.vue)，功能如下：
+于是乎，我也开发了一个“一言组件”，[在线 demo](https://yuhanglee.github.io/vue-el-demo/#/dashboard/index)，[组件源码 `hitokoto.vue`](https://github.com/Lruihao/vue-el-demo/blob/main/src/views/dashboard/widgets/daily/hitokoto.vue)，功能如下：
 
 - 点击左键复制，右键切换
 - 支持自定义一言类型、长度
