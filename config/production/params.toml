@@ -36,10 +36,10 @@
   # FixIt 0.2.14 | NEW Giscus comments config (https://giscus.app/)
   [page.comment.giscus]
     enable = true
-    repo = "yuhanglee/hugo-blog"
-    repoId = "MDEwOlJlcG9zaXRvcnk0MDQzNDY3MDk="
+    repo = "yuhanglee/yuhanglee.github.io"
+    repoId = "R_kgDOMDaHFQ"
     category = "General"
-    categoryId = "DIC_kwDOGBnXVc4CApHL"
+    categoryId = DIC_kwDOMDaHFc4CfxtJ"
     mapping = "title"
     strict = "0" # FixIt NEW | 0.2.18
     term = ""
@@ -49,6 +49,8 @@
     lightTheme = "light"
     darkTheme = "dark_dimmed"
     lazyLoad = true
+
+
 
 # FixIt 0.2.12 | NEW Busuanzi count
 [ibruce]
