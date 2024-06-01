@@ -2,6 +2,7 @@ node_modules/
 build/
 public/
 resources/
+.obsidian/
 
 .hugo_build.lock
 jsconfig.json
