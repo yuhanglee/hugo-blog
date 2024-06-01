@@ -39,7 +39,7 @@
     repo = "yuhanglee/yuhanglee.github.io"
     repoId = "R_kgDOMDaHFQ"
     category = "General"
-    categoryId = DIC_kwDOMDaHFc4CfxtJ"
+    categoryId = "DIC_kwDOMDaHFc4CfxtJ"
     mapping = "title"
     strict = "0" # FixIt NEW | 0.2.18
     term = ""
