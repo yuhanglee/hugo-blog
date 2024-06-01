@@ -2,7 +2,9 @@
 title: "CAN协议"
 description:  CAN是汽车上常用的总线接口。
 date: 2024-05-19
-image: images/CAN-bus.jpg
+resources:
+  - name: featured-image
+    src: images/CAN-bus.jpg
 math: 
 license: MIT
 hidden: false
@@ -16,11 +18,11 @@ categories:
   - 汽车
   - CAN
   - 协议
-weight: 1 
+# weight: 1  # 置顶
 ---
 
 
-# CAN总线定义
+## CAN总线定义
 ![can协议](images/CAN-bus.jpg)
 
 
@@ -48,7 +50,7 @@ weight: 1
 - 支持一对一和一对多通信
 
 
-# OSI网络
+## OSI网络
 
 用更专业的术语来说，CAN(controller area network)是由数据链路层和物理层来描述，在高速CAN中，`ISO 11898-1` 描述了数据链路层，`ISO 11898-2` 描述了物理层，如图所示，CAN的作用经常出现在7层OSI中。
 
@@ -60,7 +62,7 @@ CAN总线物理层定义了电路类型、电信号水平、节点要求、电�
 ![OSI分层](images/OSI-layer.png)
 
 
-# 高速CAN
+## 高速CAN
 
 在汽车总线的定义中，会经常遇到不同类型的网络：下面我们提供一个简单的概述：
 
@@ -69,7 +71,7 @@ CAN总线物理层定义了电路类型、电信号水平、节点要求、电�
 - LIN总线： LIN总线是CAN总线的低成本补充，其只需要3根线就可以完成通信，可以进行更加简单的布线和更经济的网络。
 - 以太网： 当今随着新能源的崛起，车辆功能越来越复杂。新能源车辆以支持ADAS(高级驾驶辅助系统)、信息娱乐系统、摄像头等高带宽要求。与CAN总线相比，汽车以太网提供了更高的数据传入速率，但缺乏经典CAN和CAN FD的一些安全/性能的特征。未来一段时间，CAN、CAN FD、CAN XL和以太网基友可能同事应用于新的汽车和工业开发。
 
-# CAN总线优点
+## CAN总线优点
 
 由于CAN总线具有以下优点，CAN总线标准几乎用于所有车辆和许多场景。
 
