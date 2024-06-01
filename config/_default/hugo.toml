@@ -3,7 +3,7 @@
 # See: https://gohugo.io/getting-started/configuration/
 # -------------------------------------------------------------------------------------
 
-title = "菠菜眾長"
+title = "博客"
 baseURL = "https://yuhanglee.github.io"
 # theme = ["FixIt", "shortcode-mmt-netease", "shortcode-sponsor-log"]
 defaultContentLanguage = "zh-cn"

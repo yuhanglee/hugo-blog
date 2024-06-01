@@ -14,7 +14,6 @@ keywords:
 -->
 
 <!-- markdownlint-disable-next-line no-bare-urls -->
-{{< link href="https://lruihao.cn/friends/opml.xml" content=":(far fa-star fa-fw): Subscribe ours" download="opml.xml" card=true >}}
 
 ## 基本資訊
 

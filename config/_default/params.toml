@@ -4,15 +4,15 @@
 # -------------------------------------------------------------------------------------
 
 # FixIt theme version
-version = "0.2.X"
+version = "0.3.8"
 # site description
-description = "Lruihao's Note 李瑞豪的博客：探索、分享、记录自己在工作生活学习到一些东西。人知道得越多，就就会发现无知的越多。有更广袤世界可以探索，真是莫大的快乐啊！"
+description = "lyh的博客：记录工作生活乐趣。"
 # site keywords
-keywords = ["李瑞豪", "李瑞豪的博客", "菠菜眾長", "博採眾長", "Lruihao", "Cell", "Hugo Blog"]
+keywords = ["Hugo Blog"]
 # site default theme ("light", "dark", "auto")
 defaultTheme = "auto"
 # date format
-dateFormat = "2006-01-02"
+dateFormat = "2024-05-01"
 # website images for Open Graph and Twitter Cards
 images = ["/images/apple-devices-preview.webp"]
 # FixIt 0.2.12 | NEW enable PWA
@@ -35,18 +35,18 @@ disableThemeInject = false
 
 # Author Configuration
 [author]
-  name = "Lruihao"
-  email = "1024@lruihao.cn"
-  link = "https://github.com/Lruihao"
+  name = "liyuhang"
+  email = ""
+  link = "https://github.com/yuhanglee"
   avatar = "/images/avatar.jpg"
 
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
 [gitInfo]
   # e.g. "https://github.com/hugo-fixit/docs"
-  repo = "https://github.com/Lruihao/hugo-blog"
-  branch = "docs"
+  repo = "https://github.com/yuhanglee/yuhanglee.github.io"
+  branch = "main"
   # the content directory path relative to the root of the repository
-  dir = "content"
+  dir = ""
   # the issue template for reporting issue of the posts
   # available template params: {title} {URL} {sourceURL}
   issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0A|URL|{URL}|%0A|Filename|{sourceURL}|"
@@ -111,7 +111,7 @@ disableThemeInject = false
   # FixIt 0.2.12 | NEW Header subtitle config
   [header.subtitle]
     # subtitle name
-    name = "李瑞豪的博客"
+    name = "博客"
     # whether to use typeit animation for subtitle name
     typeit = false
 
@@ -130,7 +130,7 @@ disableThemeInject = false
   # whether to show the author
   author = true
   # Site creation year
-  since = 2018
+  since = 2024
   # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
   gov = ""
   # ICP info only in China (HTML format is supported)
@@ -148,7 +148,7 @@ disableThemeInject = false
     animate = true
     icon = "fa-solid fa-heartbeat"
     pre = "博客已运行"
-    value = "2018-05-28T20:01:01+08:00"
+    value = "2024-05-01T00:00:00+08:00"
   # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
   [footer.order]
     powered = 1
@@ -203,9 +203,9 @@ disableThemeInject = false
     # FixIt 0.2.17 | NEW identifier of avatar menu link
     avatarMenu = "about"
     # title shown in home page (HTML format is supported)
-    title = "Lruihao's Note"
+    title = "liyuhang's Note"
     # subtitle shown in home page
-    subtitle = "不怕萬人阻擋，只怕自己投降"
+    subtitle = "穷"
     # whether to use typeit animation for subtitle
     typeit = true
     # whether to show social links
@@ -220,10 +220,10 @@ disableThemeInject = false
 
 # Social config about the author
 [social]
-  GitHub = "Lruihao"
-  Weibo = "liahao"
-  Email = "1024@lruihao.cn"
-  RSS = true
+  GitHub = ""
+  Weibo = ""
+  Email = ""
+  RSS = false
   Stackoverflow = ""
   Zhihu = ""
   Douban = ""
@@ -296,7 +296,7 @@ disableThemeInject = false
     # whether to make the table of the contents in the sidebar automatically collapsed
     auto = true
     # FixIt 0.2.13 | NEW position of TOC ("left", "right")
-    position = "right"
+    position = "left"
   # FixIt 0.2.13 | NEW Display a message at the beginning of an article to warn the reader that its content might be expired
   [page.expirationReminder]
     enable = true
@@ -377,8 +377,8 @@ disableThemeInject = false
     # FixIt 0.2.18 | NEW display mode of QR code images, optional values: ["static", "fixed"], default: `static`
     mode = "fixed"
     [page.reward.ways]
-      wechatpay = "/images/wechatpay.jpg"
-      alipay = "/images/alipay.jpg"
+      # wechatpay = "/images/wechatpay.jpg"
+      # alipay = "/images/alipay.jpg"
       # paypal = "/images/paypal.png"
       # bitcoin = "/images/bitcoin.png"
   # FixIt CHANGED | 0.2.0 social share links in post page
@@ -509,8 +509,8 @@ disableThemeInject = false
 # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
 [githubCorner]
   enable = true
-  permalink = "https://github.com/Lruihao/hugo-blog"
-  title = "在 GitHub 上查看程式碼，訂閱請點 Watch"
+  permalink = "https://github.com/yuhanglee/yuhanglee.github.io"
+  title = "在 GitHub 上查看项目"
   position = "right" # ["left", "right"]
 
 # FixIt 0.2.14 | NEW Gravatar config
