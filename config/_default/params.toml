@@ -86,9 +86,9 @@ disableThemeInject = false
   # whether to use the absolute URL based on the baseURL in search index
   absoluteURL = false
   [search.algolia]
-    index = "index"
-    appID = "MTJNHU0JVB"
-    searchKey = "5486225134d99f43826da401ee9bad57"
+    index = "hugo"
+    appID = "QM09QMQZRM"
+    searchKey = "d9aa53d9a7628bf70267833aad004364"
 
 # Header config
 [header]
