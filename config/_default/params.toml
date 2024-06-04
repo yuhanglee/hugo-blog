@@ -87,8 +87,8 @@ disableThemeInject = false
   absoluteURL = false
   [search.algolia]
     index = "hugo"
-    appID = "QM09QMQZRM"
-    searchKey = "d9aa53d9a7628bf70267833aad004364"
+    appID = "2TEGWLGRN1"
+    searchKey = "93bcb0b78106bbf24ce272f032c1eeeb"
 
 # Header config
 [header]
