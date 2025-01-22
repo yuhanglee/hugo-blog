@@ -1,5 +1,8 @@
 name: Hugo build and deploy
 on:
+  schedule:
+    # Rebuid the site every day at 00:00 UTC to update the projects data
+    - cron: '0 0 * * *'
   push:
     branches: [ main ]
     paths:
@@ -12,7 +15,7 @@ on:
       - 'go.mod'
       - 'go.sum'
   workflow_run:
-    workflows: ['Update theme']
+    workflows: ['Update theme components']
     types:
       - completed
   workflow_dispatch:
@@ -56,7 +59,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: latest
+          hugo-version: ${{ vars.HUGO_VERSION || 'latest' }}
           extended: true
 
       - name: Build

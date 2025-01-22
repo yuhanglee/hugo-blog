@@ -7,12 +7,13 @@
   identifier = "archives"
   pre = ""
   post = ""
-  name = "归档"
+  name = "文章"
   url = "/archives/"
   title = ""
   weight = 1
   [main.params]
-    icon = "fa-solid fa-archive"
+    # icon = "fa-solid fa-archive"
+    icon = "fa-solid fa-feather"
 [[main]]
   identifier = "categories"
   parent = "archives"
@@ -70,20 +71,21 @@
   identifier = "about"
   pre = ""
   post = ""
-  name = "關於"
+  name = "关于"
   url = "/about/"
   title = ""
-  weight = 7
+  weight = 100
   [main.params]
-    icon = "fa-regular fa-id-card"
+    icon = "fa-solid fa-quote-left"
 [[main]]
   identifier = "github"
-  pre = "<i class='fa-brands fa-github fa-fw' aria-hidden='true'></i>"
+  pre = ""
   post = ""
-  name = ""
+  name = "关注 Follow"
   url = "https://github.com/Lruihao/hugo-blog"
   title = "GitHub"
   weight = ""
   [main.params]
     class = "text-center"
+    icon = "fa-brands fa-github fa-lg"
     type = "mobile"

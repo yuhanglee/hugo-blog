@@ -10,8 +10,18 @@
   enable = false
   # Check for updates
   c4u = false
-  # Mobile Devtools confi
-  [dev.mDevtools]
-    enable = false
-    # "vConsole", "eruda" supported
-    type = "vConsole"
+
+# -------------------------------------------------------------------------------------
+# Theme Components Configuration
+# -------------------------------------------------------------------------------------
+
+# Mobile Devtools confi
+[mDevtools]
+  enable = true
+  # "eruda", "vConsole" supported
+  type = "eruda"
+
+# Content adapters config for component projects
+# https://github.com/hugo-fixit/component-projects
+[projectsAdapters]
+  enable = false

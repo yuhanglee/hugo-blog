@@ -2,6 +2,7 @@
 title: '{{ now.Year }} 年度总结'
 subtitle:
 date: {{ .Date }}
+lastmod: {{ .Date }}
 draft: true
 comment: false
 tags:
@@ -10,7 +11,7 @@ categories:
   - Summaries
 hiddenFromHomePage: false
 hiddenFromSearch: true
-hiddenFromRss: true
+hiddenFromFeed: true
 hiddenFromRelated: true
 expirationReminder:
   enable: false

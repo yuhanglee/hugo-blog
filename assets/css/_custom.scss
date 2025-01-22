@@ -7,7 +7,10 @@ $blog-base-color: #e6e5f8 !default;
 $blog-bg-color: #fafaf8 !default;
 
 #header-desktop {
-  body:not([data-theme='dark']) & {
+  @include transition(filter 0.3s ease);
+  @include box-shadow(none !important);
+
+  :root:not([data-theme='dark']) & {
     background-image: linear-gradient(180deg, lighten($blog-base-color, 5%), $blog-base-color);
   }
 
@@ -30,10 +33,18 @@ $blog-bg-color: #fafaf8 !default;
       background-image: url(/images/drop-dark.min.svg);
     }
   }
+
+  &:hover {
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
+
+    [data-theme='dark'] & {
+      filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.1));
+    }
+  }
 }
 
 .github-corner svg {
-  body:not([data-theme='dark']) & {
+  :root:not([data-theme='dark']) & {
     fill: darken($blog-base-color, 25%);
   }
 }
@@ -95,6 +106,13 @@ $blog-bg-color: #fafaf8 !default;
       background-image: linear-gradient(90deg, rgba(195, 245, 215, .04) 3%, transparent 0), linear-gradient(1turn, rgba(195, 245, 215, .04) 3%, transparent 0);
     }
   }
+
+  // Content adapter generated posts style
+  &[data-adapters='projects'] {
+    .single-subtitle {
+      font-size: 1rem;
+    }
+  }
 }
 
 .home {
@@ -105,28 +123,19 @@ $blog-bg-color: #fafaf8 !default;
   }
 
   .featured-image-preview {
-    &::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(
+    mask-image: linear-gradient(
+      180deg,
+      #fff 0%,
+      rgba(255, 255, 255, 0.8) 65%,
+      rgba(255, 255, 255, 0.4) 100%
+    );
+    [data-theme='dark'] & {
+      mask-image: linear-gradient(
         180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.2) 65%,
-        rgba(255, 255, 255, 0.6) 100%
+        #000 0%,
+        rgba(0, 0, 0, 0.8) 65%,
+        rgba(0, 0, 0, 0.4) 100%
       );
-      backdrop-filter: blur(0.1px);
-      pointer-events: none;
-
-      [data-theme='dark'] & {
-        background-image: linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 0) 0%,
-          rgba(0, 0, 0, 0.2) 65%,
-          rgba(0, 0, 0, 0.6) 100%
-        );
-      }
     }
   }
 
@@ -142,9 +151,12 @@ $blog-bg-color: #fafaf8 !default;
     .home-avatar img {
       width: 8rem;
     }
-    .summary .content {
-      display: block;
-    }
+  }
+}
+
+.aside-custom {
+  &:not(:first-child) {
+    margin-top: 1rem;
   }
 }
 
@@ -166,12 +178,12 @@ $blog-bg-color: #fafaf8 !default;
 // ==============================
 @media only screen and (min-width: 681px) {
   body {
-    &:not([data-theme='dark']) {
+    :not([data-theme='dark']) & {
       background-color: $blog-bg-color;
     }
   }
   .breadcrumb-container {
-    body:not([data-theme='dark']) & {
+    :root:not([data-theme='dark']) & {
       background-color: $blog-bg-color;
   
       .breadcrumb {

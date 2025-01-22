@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------------------
 
 # FixIt theme version
-version = "0.3.8"
+version = "0.3.X"
 # site description
 description = "lyh的博客：记录工作生活乐趣。"
 # site keywords
@@ -19,8 +19,8 @@ images = ["/images/apple-devices-preview.webp"]
 enablePWA = true
 # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
 externalIcon = true
-# FixIt 0.3.0 | NEW whether to reverse the order of the navigation menu
-navigationReverse = true
+# FixIt 0.3.13 | NEW whether to capitalize titles
+capitalizeTitles = true
 # FixIt 0.3.0 | NEW whether to add site title to the title of every page
 # remember to set up your site title in `hugo.toml` (e.g. title = "title")
 withSiteTitle = true
@@ -29,6 +29,8 @@ titleDelimiter = "|"
 # FixIt 0.3.0 | NEW whether to add site subtitle to the title of index page
 # remember to set up your site subtitle by `params.header.subtitle.name`
 indexWithSubtitle = true
+# FixIt 0.3.13 | NEW whether to show summary in plain text
+summaryPlainify = false
 # FixIt 0.2.14 | NEW FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
 # You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
 disableThemeInject = false
@@ -71,7 +73,7 @@ disableThemeInject = false
 # Search config
 [search]
   enable = true
-  # type of search engine ("lunr", "algolia")
+  # type of search engine ["algolia", "fuse", "cse", "post-chat"]
   type = "algolia"
   # max index length of the chunked content
   contentLength = 4000
@@ -120,6 +122,15 @@ disableThemeInject = false
   enable = true
   sticky = true
   showHome = false
+  separator = "/"
+  capitalize = true
+
+# FixIt 0.3.10 | NEW Post navigation config
+[navigation]
+  # whether to show the post navigation in section pages scope
+  inSection = false
+  # whether to reverse the next/previous post navigation order
+  reverse = false
 
 # Footer config
 [footer]
@@ -163,14 +174,12 @@ disableThemeInject = false
   paginate = 20
   # date format (month and day)
   dateFormat = "01-02"
-  # amount of RSS pages
-  rss = 20
-  # FixIt 0.2.13 | NEW recently updated posts settings
-  [section.recentlyUpdated]
-    enable = true
-    rss = true
-    days = 30
-    maxCount = 10
+  # FixIt 0.3.10 | NEW Section feed config for RSS, Atom and JSON feed.
+  [section.feed]
+    # The number of posts to include in the feed. Default is -1, which means all posts.
+    limit = -1
+    # whether to show the full text content in feed.
+    fullText = false
 
 # List (category or tag) page config
 [list]
@@ -178,8 +187,21 @@ disableThemeInject = false
   paginate = 20
   # date format (month and day)
   dateFormat = "01-02"
-  # amount of RSS pages
-  rss = 20
+  # FixIt 0.3.10 | NEW Term list feed config for RSS, Atom and JSON feed.
+  [list.feed]
+    # The number of posts to include in the feed. Default is -1, which means all posts.
+    limit = -1
+    # whether to show the full text content in feed.
+    fullText = false
+
+# FixIt 0.3.13 | NEW recently updated pages config for archives, section and term list
+[recentlyUpdated]
+  archives = true
+  section = true
+  term = true
+  rss = false
+  days = 30
+  maxCount = 10
 
 # FixIt 0.2.17 | NEW TagCloud config for tags page
 [tagcloud]
@@ -243,10 +265,10 @@ disableThemeInject = false
   hiddenFromHomePage = false
   # whether to hide a page from search results
   hiddenFromSearch = false
-  # FixIt 0.3.0 | NEW whether to hide a page from RSS feed
-  hiddenFromRss = false
   # FixIt 0.3.0 | NEW whether to hide a page from related posts
   hiddenFromRelated = false
+  # FixIt 0.3.10 | NEW whether to hide a page from RSS, Atom and JSON feed
+  hiddenFromFeed = false
   # whether to enable twemoji
   twemoji = false
   # whether to enable lightgallery
@@ -267,8 +289,6 @@ disableThemeInject = false
   linkToEdit = true
   # FixIt 0.3.0 | NEW whether to show link to report issue for the post
   linkToReport = true
-  # whether to show the full text content in RSS
-  rssFullText = true
   # FixIt 0.2.13 | NEW Page style ("narrow", "normal", "wide", ...)
   pageStyle = "normal"
   # FixIt 0.2.17 | CHANGED Auto Bookmark Support
@@ -296,7 +316,11 @@ disableThemeInject = false
     # whether to make the table of the contents in the sidebar automatically collapsed
     auto = true
     # FixIt 0.2.13 | NEW position of TOC ("left", "right")
-    position = "left"
+    position = "right"
+    # FixIt 0.3.12 | NEW supersede `markup.tableOfContents` settings
+    ordered = true
+    startLevel = 2
+    endLevel = 6
   # FixIt 0.2.13 | NEW Display a message at the beginning of an article to warn the reader that its content might be expired
   [page.expirationReminder]
     enable = true
@@ -308,7 +332,7 @@ disableThemeInject = false
     closeComment = true
   # FixIt 0.3.0 | NEW page heading config
   [page.heading]
-    # used with `markup.tableOfContents.ordered` parameter
+    # FixIt 0.3.12 | CHANGED must set `params.page.toc.ordered` to true
     [page.heading.number]
       # whether to enable auto heading numbering
       enable = true
@@ -400,7 +424,6 @@ disableThemeInject = false
       # someJavascript = "some.js"
       # Or
       # someJavascript = "https://cdn.example.com/some.js"
-      flyfish = "/js/flyfish.js"
   # Page SEO config
   [page.seo]
     # image URL
@@ -420,6 +443,8 @@ disableThemeInject = false
   cursorChar = "|"
   # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
   duration = -1
+  # FixIt 0.2.18 | NEW whether your strings will continuously loop after completing
+  loop = false
 
 # FixIt 0.2.15 | NEW Mermaid config
 [mermaid]
@@ -455,11 +480,16 @@ disableThemeInject = false
   # FixIt 0.2.13 | NEW watermark's fontFamily
   fontFamily = 'MMT_LRH,沐目体'
 
-# FixIt 0.2.12 | NEW Busuanzi count
-[ibruce]
+# FixIt 0.3.10 | NEW Busuanzi count
+[busuanzi]
+  # whether to enable busuanzi count
   enable = false
-  # Enable in post meta
-  enablePost = false
+  # busuanzi count core script source. Default is https://vercount.one/js
+  source = "https://vercount.one/js"
+  # whether to show the site views
+  siteViews = true
+  # whether to show the page views
+  pageViews = true
 
 # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu
 [verification]
@@ -489,6 +519,31 @@ disableThemeInject = false
     id = ""
     # server url for your tracker if you're self hosting
     server = ""
+  # FixIt 0.3.16 | NEW Baidu Analytics
+  [analytics.baidu]
+    id = ""
+  # FixIt 0.3.16 | NEW Umami Analytics
+  [analytics.umami]
+    data_website_id = ""
+    src = ""
+    data_host_url = ""
+    data_domains = ""
+  # FixIt 0.3.16 | NEW Plausible Analytics
+  [analytics.plausible]
+    data_domain = ""
+    src = ""
+  # FixIt 0.3.16 | NEW Cloudflare Analytics
+  [analytics.cloudflare]
+    token = ""
+  # FixIt 0.3.16 | NEW Splitbee Analytics
+  [analytics.splitbee]
+    enable = false
+    # no cookie mode
+    no_cookie = true
+    # respect the do not track setting of the browser
+    do_not_track = true
+    # token(optional), more info on https://splitbee.io/docs/embed-the-script
+    data_token = ""
 
 # Cookie consent config
 [cookieconsent]
@@ -501,8 +556,9 @@ disableThemeInject = false
 
 # Compatibility config
 [compatibility]
-  # whether to use Polyfill.io to be compatible with older browsers
-  polyfill = false
+  # whether to use Polyfill.io on cdnjs to be compatible with older browsers
+  # https://cdnjs.cloudflare.com/polyfill
+  polyfill = true
   # whether to use object-fit-images to be compatible with older browsers
   objectFit = false
 
@@ -517,7 +573,7 @@ disableThemeInject = false
 [gravatar]
   enable = true
   # Gravatar host, default: "www.gravatar.com"
-  host = "cravatar.cn" # "cravatar.cn", "gravatar.loli.net"
+  host = "gravatar.loli.net" # "cravatar.cn", "gravatar.loli.net"
   style = "mp" # "", mp, identicon, monsterid, wavatar, retro, blank, robohash
 
 # FixIt 0.2.16 | NEW Back to top
@@ -550,15 +606,145 @@ disableThemeInject = false
   # "corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
   theme = "minimal"
 
+# FixIt 0.3.17 | NEW Summary AI config
+# See https://postchat.zhheo.com/summary.html
+[postSummary]
+  enable = true
+  # If you set `params.postChat.key`, you don't need to set `params.postSummary.key`
+  key = ""
+  title = ""
+  # themes options: ["", "simple", "yanzhi"]
+  theme = ""
+  postURL = ""
+  blacklist = ""
+  wordLimit = 5000
+  typingAnimate = true
+  beginningText = ""
+
+# FixIt 0.3.10 | NEW Global Feed config for RSS, Atom and JSON feed.
+[feed]
+  # The number of posts to include in the feed. Default is -1, which means all posts.
+  limit = 10
+  # whether to show the full text content in feed.
+  fullText = true
+  # Site Challenge for Follow: https://follow.is/
+  [feed.follow]
+    feedId = ""
+    userId = ""
+# FixIt 0.3.12 | NEW Custom partials config
+# Custom partials must be stored in the /layouts/partials/ directory.
+# Depends on open custom blocks https://fixit.lruihao.cn/references/blocks/
+[customPartials]
+  head = [
+    "inject/component-projects.html",
+    "inject/fixit-docs-bookmark.html",
+    "inject/shortcode-rewards.html",
+  ]
+  menuDesktop = [
+    "inject/translate-menu-desktop.html",
+  ]
+  menuMobile = [
+    "inject/translate-menu-mobile.html",
+  ]
+  profile = [
+    "custom/profile.html",
+  ]
+  aside = [
+    "custom/aside.html",
+  ]
+  comment = []
+  footer = []
+  widgets = [
+    "custom/wechat-box.html",
+  ]
+  assets = [
+    "custom/use-assets.html",
+    "inject/shortcode-caniuse.html",
+    "inject/cmpt-flyfish.html",
+    "inject/cmpt-mdevtools.html",
+    "inject/cmpt-translate.html",
+  ]
+  postFooterBefore = []
+  postFooterAfter = [
+    "custom/post-footer-after.html"
+  ]
+
 # FixIt 0.2.15 | NEW Developer options
+# Select the scope named `public_repo` to generate personal access token,
+# Configure with environment variable `HUGO_PARAMS_GHTOKEN=xxx`, see https://gohugo.io/functions/os/getenv/#examples
 [dev]
   enable = false
   # Check for updates
   c4u = false
-  # Please do not expose to public!
-  githubToken = ""
-  # Mobile Devtools confi
-  [dev.mDevtools]
-    enable = false
-    # "vConsole", "eruda" supported
-    type = "vConsole"
+
+# -------------------------------------------------------------------------------------
+# Theme Components Configuration
+# -------------------------------------------------------------------------------------
+
+[flyfish]
+  enable = true
+  # light = "rgb(0 119 190 / 10%)"
+  light = "#e6e5f8"
+  dark = "rgb(255 255 255 / 10%)"
+
+# Mobile Devtools config
+[mDevtools]
+  enable = false
+  # "eruda", "vConsole" supported
+  type = "eruda"
+
+# Content adapters config for component projects
+# https://github.com/hugo-fixit/component-projects
+[projectsAdapters]
+  enable = true
+  # Whether to show only public repos
+  onlyPublic = true
+  # Default categories and collections
+  categories = ["GitHub"]
+  collections = ["project"]
+  # Ignore repos in the ignore list
+  ignoreList = [
+    "Lruihao/MMT",
+    "Lruihao/bill-note",
+    "hugo-fixit/hugo-atom-feed",
+  ]
+  [projectsAdapters.params]
+    [projectsAdapters.params.postChat]
+        upLoadWeb = true
+      [projectsAdapters.params.postSummary]
+        enable = true
+
+# Auto translation configuration
+# See: https://github.com/xnx3/translate/
+[autoTranslate]
+  enable = true
+  # The translation service provider, ['client.edge', 'translate.service']
+  # See: https://translate.zvo.cn/43086.html
+  service = 'translate.service'
+  # List of language ID to translate to, e.g. ["english", "chinese_simplified", "chinese_traditional", ...]
+  # If not set, it will be translated to all languages
+  # See the full language list: https://api.translate.zvo.cn/language.json
+  languages = [
+    'chinese_simplified',
+    'chinese_traditional',
+  ]
+  # Element IDs that needs to be ignored for translation, e.g. ["comment", ...]
+  ignoreID = []
+  # Class names that need to be ignored for translation, e.g. ["post-category", ...]
+  ignoreClass = []
+  # Tag names that need to be ignored for translation, e.g. ["title", ...]
+  ignoreTag = []
+  # Selectors that need to be ignored for translation, e.g. ["[data-adapters='projects'] .single-subtitle", ...]
+  ignoreSelector = []
+  # Texts that need to be ignored for translation, e.g. ["FixIt", "Lruihao", ...]
+  ignoreText = [
+    'https://fixit.lruihao.cn',
+    'Cell+',
+  ]
+  # Whether to detect the local language
+  detectLocalLanguage = true
+  # translate.js CDN
+  cdn = ""
+  # Whether to enable Enterprise-level translation channel
+  # If set to true, automatically switch to the best translation service
+  enterprise = true
