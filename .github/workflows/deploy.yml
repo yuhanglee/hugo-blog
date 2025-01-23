@@ -79,13 +79,13 @@ jobs:
           commit_message: ':rocket: ${{ github.event.head_commit.message }}'
           force_orphan: false  # once a year
 
-      - name: Update Algolia index
-        env:
-          ALGOLIA_APP_ID: 2TEGWLGRN1
-          ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
-          ALGOLIA_INDEX_NAME: 'hugo'
-          ALGOLIA_INDEX_FILE: './public/search.json'
-        run: npm run algolia
+      # - name: Update Algolia index
+      #   env:
+      #     ALGOLIA_APP_ID: 2TEGWLGRN1
+      #     ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+      #     ALGOLIA_INDEX_NAME: 'hugo'
+      #     ALGOLIA_INDEX_FILE: './public/search.json'
+      #   run: npm run algolia
 
       # - name: Install coscmd
       #   run: sudo pip install coscmd
