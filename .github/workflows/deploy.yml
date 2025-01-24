@@ -84,7 +84,7 @@ jobs:
           ALGOLIA_APP_ID: V359M52V1P
           ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
           ALGOLIA_INDEX_NAME: 'hugo'
-          ALGOLIA_INDEX_FILE: './public/search.json'
+          ALGOLIA_INDEX_FILE: './public/index.json'
         run: npm run algolia
 
       # - name: Install coscmd
