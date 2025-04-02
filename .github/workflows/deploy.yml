@@ -14,10 +14,10 @@ on:
       - 'themes/**'
       - 'go.mod'
       - 'go.sum'
-  workflow_run:
-    workflows: ['Update theme components']
-    types:
-      - completed
+  # workflow_run:
+  #   workflows: ['Update theme components']
+  #   types:
+  #     - completed
   workflow_dispatch:
 jobs:
   Actions-Hugo-Deploy:
