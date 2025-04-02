@@ -5,7 +5,7 @@
 
 title = "博客"
 baseURL = "https://yuhanglee.github.io"
-# theme = ["FixIt", "shortcode-mmt-netease", "shortcode-sponsor-log"]
+theme = ["FixIt", "shortcode-mmt-netease", "shortcode-sponsor-log"]
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-CN"
 languageName = "简体中文"
