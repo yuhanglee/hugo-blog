@@ -3,7 +3,7 @@ title: STM32-U盘
 subtitle:
 date: 2024-06-15T13:47:23+08:00
 slug: d5ea5ca
-draft: true
+draft: 
 author:
   name:
   link:

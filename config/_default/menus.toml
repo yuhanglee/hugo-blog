@@ -82,7 +82,7 @@
   pre = ""
   post = ""
   name = "关注 Follow"
-  url = "https://github.com/Lruihao/hugo-blog"
+  url = "https://github.com/yuhanglee/hugo-blog"
   title = "GitHub"
   weight = ""
   [main.params]

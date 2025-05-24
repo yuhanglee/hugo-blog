@@ -1,17 +1,17 @@
 {
-  "name": "lruihao-blog-hugo",
+  "name": "yuhanglee-blog-hugo",
   "version": "1.0.0",
-  "description": "Lruihao's Note - A front-end technical blog.",
-  "homepage": "https://github.com/Lruihao/hugo-blog#readme",
+  "description": "yuhanglee's Note - A front-end technical blog.",
+  "homepage": "https://github.com/yuhanglee/hugo-blog#readme",
   "bugs": {
-    "url": "https://github.com/Lruihao/hugo-blog/issues"
+    "url": "https://github.com/yuhanglee/hugo-blog/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lruihao/hugo-blog.git"
+    "url": "git+https://github.com/yuhanglee/hugo-blog.git"
   },
   "license": "MIT",
-  "author": "Lruihao (https://github.com/Lruihao)",
+  "author": "yuhanglee (https://github.com/yuhanglee)",
   "scripts": {
     "algolia": "atomic-algolia",
     "build": "hugo --gc --minify --logLevel info",

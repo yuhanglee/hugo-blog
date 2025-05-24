@@ -3,7 +3,7 @@ title: FatFS 格式
 subtitle:
 date: 2024-06-15T13:47:00+08:00
 slug: d5ea5c2
-draft: true
+draft: false
 author:
   name:
   link:

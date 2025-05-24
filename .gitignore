@@ -13,3 +13,4 @@ jsconfig.json
 
 # Obsidian
 .obsidian/
+*_old/
