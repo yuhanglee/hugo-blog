@@ -1,0 +1,6 @@
+[submodule "content/private"]
+	path = content/private
+	url = git@github.com:yuhanglee/blog-private.git
+[submodule "themes/maupassant"]
+	path = themes/maupassant
+	url = https://github.com/yuhanglee/maupassant-hugo.git
