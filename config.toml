@@ -1,4 +1,4 @@
-baseURL = "localhost:2000"
+baseURL = "https://yuhanglee.github.io"
 languageCode = "zh-CN"
 title = "雪下"
 theme = "maupassant"

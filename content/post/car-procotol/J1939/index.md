@@ -41,9 +41,6 @@ note abstract info tip success question warning failure danger bug example quote
 
 
 
-aaaa
-
-
 ``` C
 void rt_cpus_lock_status_restore(struct rt_thread *thread)
 {
