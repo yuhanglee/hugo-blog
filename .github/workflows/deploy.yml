@@ -15,9 +15,6 @@ on:
       - 'go.mod'
       - 'go.sum'
   # workflow_run:
-  #   workflows: ['Update theme components']
-  #   types:
-  #     - completed
   workflow_dispatch:
 jobs:
   Actions-Hugo-Deploy:
@@ -78,31 +75,3 @@ jobs:
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: ':rocket: ${{ github.event.head_commit.message }}'
           force_orphan: false  # once a year
-
-      - name: Update Algolia index
-        env:
-          ALGOLIA_APP_ID: V359M52V1P
-          ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
-          ALGOLIA_INDEX_NAME: 'hugo'
-          ALGOLIA_INDEX_FILE: './public/search.json'
-        run: npm run algolia
-
-      # - name: Install coscmd
-      #   run: sudo pip install coscmd
-
-      # - name: Configure coscmd
-      #   env:
-      #     COS_SECRET_ID: ${{ secrets.COS_SECRET_ID }}
-      #     COS_SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}
-      #     COS_BUCKET_NAME: blog-1256932288
-      #     COS_BUCKET_REGION: ap-chengdu
-      #   run: coscmd config -a $COS_SECRET_ID -s $COS_SECRET_KEY -b $COS_BUCKET_NAME -r $COS_BUCKET_REGION
-
-      # - name: Deploy to COS Bucket
-      #   run: coscmd upload -r -s --delete -f public/ /
-
-      # - name: Refresh Qcloud CDN cache
-      #   env:
-      #     SECRET_ID: ${{ secrets.COS_SECRET_ID }}
-      #     SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}
-      #   run: npm run qcloudcdn

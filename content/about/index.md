@@ -1,12 +1,9 @@
 ---
-title: 关于我
-subtitle: liyuhang
-date: 2021-09-07T21:00:48+08:00
-comment: false
-twemoji: false
-lightgallery: false
+title: "关于我"
+date: 2015-03-10 00:13:27
+description: 
 ---
 
+主要做嵌入式软件的新手。
 
-无
 

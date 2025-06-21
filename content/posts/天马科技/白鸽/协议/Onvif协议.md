@@ -1,1 +1,0 @@
-[Onvif协议：使用gSOAP创建SOAP调用实例_gsoap 编译 soapclient soapserver-CSDN博客](https://blog.csdn.net/zhizhengguan/article/details/109287574)
