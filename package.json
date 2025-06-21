@@ -21,8 +21,7 @@
     "qcloudcdn": "node .scripts/qcloudcdn.js $SECRET_ID $SECRET_KEY",
     "server": "hugo server -D --disableFastRender --navigateToChanged --renderToMemory --bind 0.0.0.0",
     "server:production": "npm run server -- --environment production",
-    "server:development": "cross-env HUGO_MODULE_WORKSPACE=hugo.work npm run server -- --ignoreVendorPaths \"**\"",
-    "update:theme": "hugo mod get -u github.com/hugo-fixit/FixIt@main && hugo mod tidy && git add . && git commit -m ':arrow_up: Chore(theme): update FixIt version'"
+    "server:development": "cross-env HUGO_MODULE_WORKSPACE=hugo.work npm run server -- --ignoreVendorPaths \"**\""
   },
   "dependencies": {
     "atomic-algolia": "^0.3.19",
